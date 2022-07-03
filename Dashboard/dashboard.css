@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-white: #fff;
+    --main-orange: #ff8600;
+    --main-blue: #758bfd;
+    --main-grayBlue: #aeb8fe;
+    --main-indigo: #27187e70;
+}
+
+body {
+    background-color: var(--main-white);
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* =======Navigation Bar========== */
+#navigation {
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2.5rem;
+    padding: 1em;
+    background-color: var(--main-indigo);
+}
+
+.logo {
+    margin-left: 1em;
+
+}
+
+.logo a {
+    cursor: pointer;
+    color: var(--main-white);
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.logo a:hover {
+    text-decoration: underline dashed var(--main-blue) .1em;
+}
+
+.nav_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav_items ul {
+    list-style: none;
+}
+
+.nav_items ul li a {
+    text-decoration: none;
+    color: var(--main-white);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.nav_items ul li .next {
+    width: 1em;
+    height: 1em;
+    transform: rotate(90deg);
+    margin-left: .2em;
+    top: 0;
+    opacity: 0;
+}
+
+.nav_items ul li:hover .next {
+    opacity: 1;
+}
+
+.nav_items ul li a:hover {
+    color: var(--main-orange);
+    transition: color 400ms ease-in;
+}
+
+/* heading */
+
+.heading {
+    padding: 5rem;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--main-indigo);
+    text-align: center;
+}
+
+/* Dashboard */
+
+.dashboard {
+    display: flex;
+    border-radius: 5px;
+    height: 90vh;
+    width: 90vw;
+    margin: 20px auto;
+}
+
+.dash-box-1 {
+    height: 100%;
+    width: 30%;
+}
+
+.dash-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.profile-grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--main-grayBlue);
+    height: 75%;
+    width: 90%;
+    margin: 15px auto;
+    border-radius: 6px;
+}
+
+.profile_image {
+    margin-top: 5%;
+    height: 150px;
+    border: 2px solid black;
+    width: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#profile-img {
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.profile-name {
+    margin: 10px auto;
+    font-size: 25px;
+}
+
+.profile-course {
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.profile-list {
+    margin-top: 25px;
+    display: grid;
+    width: 80%;
+    height: 20%;
+
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid black;
+}
+
+.line {
+    height: 1px;
+    background-color: black;
+}
+
+.profile-details b,
+.profile-details a {
+    margin: 15px 0px;
+    font-size: 15px;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.profile-btn-div {
+    width: 80%;
+}
+
+.profile-btn-div .profile-btn {
+    border-top: 1px solid black;
+    margin-top: 40px;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main-orange);
+}
+
+
+/* dash-board-2 */
+
+#personal_id {
+    font-size: 18px;
+    padding: 7px;
+    font-weight: 500;
+    border-bottom: 2px solid lightgray;
+}
+
+.dash-box-3 {
+    border-radius: 5px;
+    height: 95%;
+    width: 95%;
+    border: 1px solid #758bfd;
+}
+
+.form {
+    height: 100%;
+}
+
+.form-line {
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-line1 {
+    display: flex;
+}
+
+.form-line-grid {
+    display: grid;
+    padding: 10px;
+    width: calc(100% / 3);
+}
+
+.input-heading {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.input-text {
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(138, 132, 132);
+    height: 40px;
+    padding: 7px;
+}
+
+.select-option {
+    font-size: 14px;
+}
+
+.save {
+    height: 20px;
+
+}
+
+#save {
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 85.5%;
+    margin-top: 15px;
+    background-color: rgb(40, 219, 40);
+    border: none;
+    border-radius: 5px;
+}
+
+#save:hover {
+    background-color: orange;
+    transition: background-color 400ms ease-in-out;
+}

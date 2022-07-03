@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>User Dashboard</title>
+</head>
+
+<body>
+    <nav id="navigation">
+        <div class="logo">
+            <h1><a href="./index.html">HOSTEL</a></h1>
+        </div>
+        <div class="nav_items">
+            <div class="nav_item">
+                <ul>
+                    <li>
+                        <a class="next-link" href="">Home</a>
+                        <img src="images/nexticon.svg" alt="next" class="next">
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav_item">
+                <ul>
+                    <li>
+                        <a class="next-link" href="">Contact</a>
+                        <img src="images/nexticon.svg" alt="next" class="next">
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav_item">
+                <ul>
+                    <li>
+                        <a class="next-link" href="">About</a>
+                        <img src="images/nexticon.svg" alt="next" class="next">
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav_item">
+                <ul>
+                    <li>
+                        <a class="next-link" href="register">Join</a>
+                        <img src="images/nexticon.svg" alt="next" class="next">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="heading">User Dashboard</h1>
+    <section class="dashboard">
+        <div class="dash-box-1">
+            <div class="profile-grid">
+                <div class="profile_image"><img id="profile-img"
+                        src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                        alt=""></div>
+                <div class="profile-name"> Lorem Ipsum</div>
+                <div class="profile-course">Lorem ipsum dolor sit amet consectetur </div>
+                <div class="profile-list">
+                    <div class="profile-details"><b>College ID</b><a class="profile-link" href="#">0205abc012</a></div>
+                    <div class="profile-details"><b>Email</b><a class="profile-link" href="#">mail@gmail.com</a></div>
+                    <!-- <div class="profile-details"><b>Mobile</b><a class="profile-link" href="#">9876543210</a></div>-->
+                    <div class="line"></div>
+                </div>
+                <div class="profile-btn-div">
+                    <input class="profile-btn" type="button" value="Change Photograph">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="dash-box-2">
+            <div class="dash-box-3">
+                <h3 id="personal_id">Personal Details </h3>
+                <form action="dashboard.html" method="POST" class="form">
+                    <div class="form-line">
+                        <div class="form-line-grid">
+                            <label for="fullname" class="input-heading">Full Name</label>
+                            <input type="text" name="fullname" placeholder="Enter your Full Name" class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="College_id" class="input-heading">College ID</label>
+                            <input type="text" name="College_id" placeholder="Enter College ID" class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="course" class="input-heading">Select Course</label>
+                            <select name="course" class="input-text">
+                                <option value="default" class="course-name" disabled selected value>Select Course
+                                </option>
+                                <option class="course-name">B.Tech</option>
+                                <option class="course-name">B.Pharma</option>
+                                <option class="course-name">BBA</option>
+                                <option class="course-name">B.Sc Agriculture</option>
+                                <option class="course-name">MBA</option>
+                            </select>
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="course" class="input-heading">Year of Admission</label>
+                            <select name="yearofadm" class="input-text">
+                                <option value="default" class="select-option" disabled selected value>Select Year of
+                                    Admission</option>
+                                <option class="select-option">2022</option>
+                                <option class="select-option">2021</option>
+                                <option class="select-option">2020</option>
+                                <option class="select-option">2019</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-line1">
+                        <div class="form-line-grid">
+                            <label for="father_name" class="input-heading">Father's Name</label>
+                            <input type="text" placeholder="Enter Father's Name" name="father_name" class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="father_occ" class="input-heading">Father's Occupation</label>
+                            <input type="text" placeholder="Father's Occupation" name="father_occ" class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="father_no" class="input-heading">Father's Mobile</label>
+                            <input type="text" placeholder="Father's Mobile" name="father_no" class="input-text">
+                        </div>
+                    </div>
+                    <div class="form-line1">
+                        <div class="form-line-grid">
+                            <label for="mother_name" class="input-heading">Mother's Name</label>
+                            <input type="text" placeholder="Enter Mother's Name" name="mother_name" class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="mother_occ" class="input-heading">Mother's Occupation</label>
+                            <input type="text" placeholder="Enter Mother's Occupation" name="mother_occ"
+                                class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="mother_no" class="input-heading">Mother's Mobile</label>
+                            <input type="text" placeholder="Enter Mother's Mobile" name="mother_no" class="input-text">
+                        </div>
+                    </div>
+                    <div class="form-line1">
+                        <div class="form-line-grid">
+                            <label for="dob" class="input-heading">Date of Birth</label>
+                            <input type="date" placeholder="Date of Birth" name="dob" class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="category" class="input-heading">Select Category</label>
+                            <select name="category" class="input-text">
+                                <option value="default" class="select-option" disabled selected value>Select Category
+                                </option>
+                                <option class="select-option">General</option>
+                                <option class="select-option">OBC</option>
+                                <option class="select-option">SC</option>
+                                <option class="select-option">ST</option>
+                            </select>
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="gender" class="input-heading">Gender</label>
+                            <select name="gender" class="input-text">
+                                <option value="default" class="select-option" disabled selected value>Select Gender
+                                </option>
+                                <option class="select-option">Male</option>
+                                <option class="select-option">Female</option>
+                                <option class="select-option">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-line1">
+                        <div class="form-line-grid">
+                            <label for="address" class="input-heading">Address</label>
+                            <input type="text" placeholder="Enter your Address" name="address" class="input-text">
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="hometown-distance" class="input-heading">home Town distance</label>
+                            <select name="hometown-distance" class="input-text">
+                                <option value="default" class="select-option" disabled selected value>Select distance of
+                                    hometown</option>
+                                <option class="select-option">Within 50 Kilometers</option>
+                                <option class="select-option">Within 50-100 Kilometers</option>
+                                <option class="select-option">Within 100-500 Kilometers</option>
+                                <option class="select-option">More than 500 Kilometers</option>
+                            </select>
+                        </div>
+                        <div class="form-line-grid">
+                            <label for="pincode" class="input-heading">Pincode</label>
+                            <input type="text" placeholder="Enter Pincode" name="pincode" class="input-text">
+                        </div>
+                    </div>
+                    <div class="save">
+                        <input type="submit" value="Save Changes" id="save">
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
