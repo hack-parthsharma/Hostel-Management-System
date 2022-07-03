@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./images/home.jpg);
+    background-size:cover;
+}
+
+.sign_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    margin: 8% auto;
+    padding-left: 5%;
+    background-color: #fff;
+    align-items: left;
+    border-radius: 10px;
+    box-shadow: 0 0 0 15px #e4decb;
+    z-index: 1;
+}
+.log_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    margin: 10% auto;
+    padding-left: 2.5%;
+    background-color: #fff;
+    align-items: left;
+    border-radius: 10px;
+    box-shadow: 0 0 0 15px #e4decb;
+    z-index: 1;
+}
+label {
+    padding-bottom: 15px;
+}
+input[type = email],
+input[type = text],
+input[type = password] {
+    display: block;
+    width: 270px;
+    height: 40px;
+    border: 1px solid #8c8ca4;
+    border-radius: 3px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+input[type = text] {
+    text-transform: uppercase;
+}
+input[type = checkbox] {
+    vertical-align: middle;
+    border: 1px solid #8c8ca4;
+    transform: scale(1.3);
+}
+input[type = email]:focus,
+input[type = text]:focus,
+input[type = password] {
+    width: 270px;
+    height: 40px;
+    border: 1px solid #8c8ca4;
+    border-radius: 3px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+::placeholder {
+    color: #a2a2c0;
+    text-transform: lowercase;
+}
+
+button {
+    width: 270px;
+    height: 50px;
+    border: 1px solid #8c8ca4;
+    border-radius: 3px;
+    background-color: #3f3f6e;
+    font-size: 18px;
+    color: #fff;
+}
+ span {
+    margin: 15px 30px;
+    color: #3f3f6e;
+    font-weight: 700;
+}
+h2 {
+    font-size: 30px;
+    padding-left: 25%;
+    color: #303030;
+    padding-bottom: 10px;
+}
+/* .rect {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 250px;
+    top: 5%;
+    left: 15%;
+    background: #eee7ce;
+    z-index: -1;
+}
+.big-rect {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 300px;
+    bottom: 5%;
+    right: 10%;
+    background: #eee7ce;
+    z-index: -1;
+} */

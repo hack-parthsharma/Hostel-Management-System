@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* =======Navigation Bar========== */
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 25px;
+    padding: 1em;
+    background-color: #27187e70;
+}
+
+.logo {
+    margin-left: 1em;
+}
+
+.logo a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: underline dashed #758bfd .1em;
+}
+
+.nav_items {
+    display: grid;
+    grid-template-columns: repeat(5, 140px);
+}
+.nav_bar i {
+    color: #fff;
+}
+
+.nav_items ul {
+    list-style: none;
+}
+
+.nav_items ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.nav_items ul li .next {
+    width: .45em;
+    transform: rotate(90deg);
+    margin-left: .2em;
+    top: 0;
+    opacity: 0;
+}
+
+.nav_items ul li:hover .next {
+    opacity: 1;
+}
+
+.nav_items ul li a:hover {
+    color: #ff8600;
+    transition: color 400ms ease-in;
+}
+
+/* ================Header============= */
+header {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./images/home.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.naming-container {
+    font-size: 3.4em;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 100%);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 4em;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.welcome_text p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 5%;
+    padding: 10%;
+}
+
+
+
+/* =====---Cards_on_homePage----======= */
+section {
+    padding: 5% 0;
+}
+.card img {
+    height: 20rem;
+    width: 20rem;
+}
+
+
+/* =====---About_page----======= */
+.about_head {
+    height: 60vh;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./images/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.naming-container {
+    font-size: 3.4em;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 100%);
+}
+
+.aboutWel {
+    margin-top: 10%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.wardens {
+    display: flex;
+    flex-direction: column;
+}
+
+.abt-warden {
+    display: grid;
+    gap: 3em;
+}
+
+.wardens h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 1em;
+    text-decoration: underline wavy #758bfd 3px;
+}
+
+.abt-warden .chief {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.abt-warden .girls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.abt-warden .boys {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.abt-warden .about {
+    width: 50em;
+}
+
+.about h2 {
+    font-size: 1.7em;
+    padding-bottom: .1em;
+}
+
+.about span {
+    font-weight: 600;
+}
+
+.about p {
+    padding-top: 1em;
+    line-height: 1.6em;
+    letter-spacing: .12em;
+    font-weight: 500;
+}
+
+.abt-warden img {
+    border-radius: 0 1em 0 1em;
+    box-shadow: 0 1px 10px #111;
+    width: 20em;
+    height: 20em;
+    transition: 600ms;
+}
+
+.abt-warden img:hover {
+    box-shadow: none;
+    border-radius: 1em;
+}
+
+.wardens .chief,
+.girls,
+.boys {
+    text-align: center;
+}
+
+.h_title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+    text-decoration: underline wavy #758bfd 3px;
+}
+
+.buildings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 20em 20em; */
+    margin: 2em;
+    /* row-gap: 2em; */
+    column-gap: 2em;
+}
+
+.girl_hostels {
+    display: grid;
+}
+
+.girlhostel,
+.boyhostel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.buildings img {
+    width: 30em;
+    height: 30em;
+    border-radius: 1em;
+    transition: 300ms;
+}
+
+.buildings img:hover {
+    box-shadow: 0 1px 10px #111;
+}
+
+.buildings h3 {
+    font-size: 1.5em;
+}
+
+.buildings p {
+    width: 30em;
+    margin: .5em 0 1.5em 0;
+}
+

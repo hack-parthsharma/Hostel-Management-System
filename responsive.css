@@ -1,0 +1,74 @@
+@media screen and (max-width: 970px) {
+    .nav_items {
+        display: none;
+    }
+
+    .container h1 {
+        font-size: 2.4em;
+    }
+
+    .naming-container {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav_items {
+        display: none;
+    }
+
+    .container h1 {
+        font-size: 2.4em;
+    }
+
+    .naming-container {
+        font-size: 2.5em;
+    }
+
+    .abt-warden .about {
+        width: 100%;
+    }
+
+    .abt-warden .chief {
+        display: grid;
+    }
+
+    .abt-warden .girls {
+        display: grid;
+    }
+
+    .abt-warden .boys {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav_items {
+        display: none;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .naming-container {
+        font-size: 1.8em;
+    }
+
+    .welcome_text p {
+        font-size: 1.2em;
+        margin-top: 20%;
+    }
+
+    .aboutWel {
+        margin-top: 25%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .welcome_text p {
+        font-size: 1.2em;
+        margin-top: 30%;
+    }
+}
